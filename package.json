@@ -1,0 +1,31 @@
+{
+  "name": "php-app",
+  "version": "1.0.0",
+  "description": "Application PHP",
+  "main": "",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "php -c php.ini ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml --coverage-text",
+    "test:watch": "watch 'npm run --silent test' ./src ./tests",
+    "test:coverage": "$npm_package_scripts_test --coverage-text",
+    "start": "php -S localhost:4000 -t src/ -c php.ini src/router.php",
+    "postinstall": "composer install --no-interaction --prefer-source",
+    "version": "php -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elgervb/php-app.git"
+  },
+  "author": "Elger van Boxtel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elgervb/php-app/issues"
+  },
+  "homepage": "https://github.com/elgervb/php-app",
+  "devDependencies": {
+    "lodash": "4.17.4",
+    "watch": "1.0.2"
+  }
+}

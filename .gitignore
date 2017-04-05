@@ -1,0 +1,8 @@
+node_modules/
+tests/cache/
+tmp/
+vendor/
+composer.lock
+composer.phar
+.vagrant
+yarn.lock

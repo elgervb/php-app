@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/php-view/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/php-view/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpspec/prophecy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/php-router/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/php-router/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/phpspec/prophecy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/imagemanipulation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/php-http/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/php-http/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/imagemanipulation/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/imagemanipulation/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/imagemanipulation/tests-long" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/php-upload/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/php-handler/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/elgervb/php-handler/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>

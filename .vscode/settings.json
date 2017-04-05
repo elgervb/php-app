@@ -1,0 +1,9 @@
+{
+    "eslint.enable": false,
+    "search.exclude": {
+        "**/.externalToolBuilders": true,
+        "**/.settings": true,
+        "**/node_modules": true,
+        "**/tmp": true
+    }
+}
