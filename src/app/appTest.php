@@ -3,7 +3,7 @@ namespace app;
 
 use handler\IHander;
 
-class AppTest extends \PHPUnit_Framework_TestCase {
+class appTest extends \PHPUnit_Framework_TestCase {
 
     /** @var App $app */
     private $app;
@@ -11,6 +11,12 @@ class AppTest extends \PHPUnit_Framework_TestCase {
 
     public function setUp() {
         $this->app = new App();
+    }
+    
+    public function testXDebugEnabled() {
+    	$this->assertTrue(function_exists('xdebug_is_enabled'), "XDebug is not enabled");
+    	
+    	$this->assertEquals(true, xdebug_is_enabled(), "XDebug is not enabled");
     }
 
     public function testCreate() {
