@@ -49,23 +49,6 @@ class App {
 	}
 	
 	/**
-	 * Add a new addRoute
-	 *
-	 * @param string $path the path to the addRoute
-	 * @param \Closure $controller the controller to handle the addRoute
-	 * @param string $requestMethod The request method, defaults to GET
-	 *
-	 * @return \app\App
-	 */
-	public function addRoute($path, \Closure $controller, $requestMethod = 'GET') {
-		$this->getRouter();
-		
-		$this->router->route($path, $controller, $requestMethod);
-		
-		return $this;
-	}
-	
-	/**
 	 * Returns the router
 	 * 
 	 * @return \router\Router
@@ -79,8 +62,25 @@ class App {
 	}
 
 	/**
-	 * @param null $requestPath
-	 * @param null $httpMethod
+	 * Add a new route
+	 *
+	 * @param string $path the path to the route
+	 * @param \Closure $controller the controller to handle the route
+	 * @param string $requestMethod The request method, defaults to GET
+	 *
+	 * @return \app\App
+	 */
+	public function route($path, \Closure $controller, $requestMethod = 'GET') {
+		$router = $this->getRouter();
+		
+		$router->route($path, $controller, $requestMethod);
+		
+		return $this;
+	}
+	
+	/**
+	 * @param string [$requestPath] the requested path, defaults to $_SERVER['REQUEST_URI']
+	 * @param string [$httpMethod] the http method, defaults to $_SERVER['REQUEST_METHOD']
 	 * @return mixed
 	 */
 	public function start($requestPath = null, $httpMethod = null) {
@@ -122,12 +122,13 @@ class App {
 		} else {
 			$error = new \handler\http\HttpStatus(404, ' ');
 			$handler = $handlers->getHandler($error);
-			$handler->handle($error);
+			if ($handler) {
+				$handler->handle($error);
+			}
 		}
 		
 		return $result;
 	}
-	
 	
 	private function setUp($timezone) {
 		// initially turn on error reporting
